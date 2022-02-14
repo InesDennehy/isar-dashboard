@@ -1,0 +1,49 @@
+.line-chart {
+	animation: fadeIn 600ms cubic-bezier(.57,.25,.65,1) 1 forwards;
+  opacity: 0;
+}
+
+#velocityChart {
+  height: 80%;
+  padding: auto;
+}
+
+#velocityChart > canvas {
+  margin:auto;
+  margin-top: 22px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#topBanner.alert{
+  background-color: #7f1d1d;
+  color: #fee2e2;
+}
+
+#topBanner i{
+  display: none;
+}
+
+#topBanner.alert i{
+  display: block;
+  line-height: 56px;
+}

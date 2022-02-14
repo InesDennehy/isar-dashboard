@@ -1,0 +1,25 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  assignment-a:
+    image: assignment-a
+    build: 
+      context: ./assignment-a
+      dockerfile: Dockerfile
+    container_name: assignment-a
+    ports:
+      - "4000:80"
+    environment:
+      - PORT=80
+    restart: "no"
+
+  assignment-b:
+    image: assignment-b
+    build: 
+      context: ./assignment-b
+      dockerfile: Dockerfile
+    container_name: assignment-b
+    ports:
+      - "4001:80"
+    environment:
+      - PORT=80
+    restart: "no"

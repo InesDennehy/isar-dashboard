@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isar Aerospace - Assignment A</title>
+    <link href="./css/dist/output.css" rel="stylesheet">
+    <link href="./css/charts.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-400">
+<div class="grid grid-cols-2 gap-4 p-5">
+    <div class="shadow-lg bg-slate-800 text-white text-lg font-bold text-center p-10 rounded-lg col-span-2">
+        <div>Going <span id="goingUp"></span></div>
+        <div>Status: <span id="statusMessage" class="text-slate-400"></span></div>
+    </div>
+    <div class="shadow-lg bg-slate-800 text-white text-lg font-bold text-center p-10 rounded-lg row-span-2">
+        Velocity
+        <div id="velocity" class="text-slate-400">
+            <span id="x"></span><br>
+            <span id="y"></span><br>
+            <span id="z"></span><br>
+        </div>
+        <div id="velocityChart"></div>
+    </div>
+    <div class="shadow-lg bg-slate-800 text-white text-lg font-bold text-center p-10 rounded-lg">
+        Altitude
+        <div id="altitude" class="text-slate-400"></div>
+        <div class="line-chart">
+            <div class="aspect-ratio">
+                <canvas id="altitudeChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-lg bg-slate-800 text-white text-lg font-bold text-center p-10 rounded-lg">
+        Temperature
+        <div id="temperature" class="text-slate-400"></div>
+        <div class="line-chart mt-4">
+            <div class="aspect-ratio">
+                <canvas id="temperatureChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <button class="shadow-lg bg-slate-800 hover:bg-slate-700 text-white text-lg font-bold text-center p-10 rounded-lg col-span-2 cursor-pointer" onclick="getData()">
+        Update
+    </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="./js/three.js"></script>
+<script src="./js/charts/altitude.js"></script>
+<script src="./js/charts/temperature.js"></script>
+<script src="./js/charts/velocity.js"></script>
+<script src="./js/charts.js"></script>
+<script src="./js/getData.js"></script>
+</body>
+</html>
