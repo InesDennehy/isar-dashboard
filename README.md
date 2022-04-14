@@ -8,7 +8,7 @@ Given that the assignment is relatively simple and not a big project, I decided 
 
 If you have docker, simply run the command `docker-compose up` on the root folder.
 
-If not, run the assignments individually entering either folder and running `npm start`.
+If not, first install dependencies on each folder by running `npm install`, and then run the assignments individually entering either folder and running `npm start`.
 
 ## Assignment C
 
